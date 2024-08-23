@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoSonic</title>
+
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="/docs/imgs/music.png">
+
+    <!-- Style Sheet Link -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- Tailwind CDN Link -->
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- Font Awesome Kit -->
+     <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
+
+
+     <style>
+        * {
+            /* width */
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: #fdfdfd;
+            border-radius: 10px;
+            }
+        }
+        body {
+            background: url(https://img.freepik.com/free-photo/3d-render-cherry-tree_1048-5503.jpg?w=740&t=st=1724443778~exp=1724444378~hmac=c2976efb9eabaa74346796fa2315ad1d2fec8ef77852f16ccd173d891d184fae);
+            background-size: cover;
+        }
+     </style>
+
+</head>
+<body class="p-0 m-0 box-border text-white font-[Montserrat]">
+    <main class="w-[100%] h-[100vh]" id="main_background">
+        <!-- Left Section -->
+        <secttion class="left_section max-w-[287px] items-center justify-center gap-2 flex flex-col" id="left-section">
+            <!-- NavBar -->
+            <nav class="flex flex-col border rounded-md w-[280px] justify-center  backdrop-blur-md mt-2 gap-y-4">
+                <a href="#" class="text-white px-2 mt-2 cursor-pointer"><i class="fa-solid fa-house mx-2"></i>Home</a>
+                <a href="#" class="text-white px-3 cursor-pointer"><i class="fa-solid fa-magnifying-glass mx-2"></i>Search</a>
+                <a href="#" class="text-white px-3 cursor-pointer"><i class="fa-solid fa-cart-shopping mx-2"></i>Marketplace</a>
+                <a href="#" class="text-white px-3 mb-2 cursor-pointer"><i class="fa-solid fa-microphone-lines mx-2"></i>Lyrics</a>
+            </nav>
+            <!-- Left Playlist Section -->
+            <div class="playlists_container flex flex-col border rounded-md my-2 w-[280px]  backdrop-blur-md mt-1 " id="playlists-container">
+                <!-- Your Library -->
+                <div class="your_library py-1 items-center my-2 flex justify-between">
+
+                    <div class="flex  items-center ">
+                        <i class="fa-solid  mx-2 fa-book font-bold"></i><h1 class=" font-bold">Your Library</h1>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-plus mx-2"></i>
+                        <i class="fa-solid fa-arrow-right mx-2"></i>
+                    </div>
+
+                </div>
+                <!-- Playlists & Artists Buttons -->
+                <div class="playlists_artists py-1 items-center  my-1  mx-2 flex justify-start">
+                    <button class="px-2 py-1 rounded-lg bg-slate-600 drop-shadow-md">Playlists</button>
+                    <button class="px-2 py-1 mx-3 rounded-lg bg-slate-600 drop-shadow-md">Artists</button>
+                </div>
+                
+                <!-- Search Playlists & Recenets -->
+                <div class="search_recents py-1 items-center  my-1 mx-2 flex justify-between">
+                    <i class="fa-solid fa-magnifying-glass ml-2"></i>
+                    <h4 class="mr-2">
+                        Recents
+                        <i class="fa-solid fa-list"></i>
+                    </h4>
+                </div>
+
+                <!-- Your Library Section -->
+                <div class="playlists_left py-3 flex flex-col gap-3 overflow-y-scroll max-h-[236px] scroll-smooth">
+
+                    <!-- Playlist Cards -->
+                     <!-- Card 1 -->
+                     <div class="playlist_cards_left flex items-center">
+                         <img class="w-[50px] rounded-md mx-2" src="https://preview.redd.it/rnqa7yhv4il71.jpg?width=640&crop=smart&auto=webp&s=819eb2bda1b35c7729065035a16e81824132e2f1" alt="Playlist Image">
+                         
+                         <div>
+                            <h4 class="font-bold">Liked Playlist</h4>
+
+                            <div class="flex items-center">
+                                <i class="fa-solid text-green-500 rotate-45 fa-thumbtack mr-3"></i>
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">40 songs</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Card 2 -->
+
+                    <div class="playlist_cards_left flex items-center">
+                        <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="Playlist Image">
+                        
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist </h4>
+
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+
+                    
+                    <div class="playlist_cards_left flex items-center">
+                        <img class="w-[50px] rounded-md mx-2" src="https://cdns-images.dzcdn.net/images/cover/d4544e5e7dd34fbea58a49896d4e68ea/1900x1900-000000-80-0-0.jpg" alt="Playlist Image">
+                        
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist </h4>
+
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+
+                    
+                    <div class="playlist_cards_left flex items-center">
+                        <img class="w-[50px] rounded-md mx-2" src="https://i.scdn.co/image/ab67616d0000b273837703447a37700546b74b6c" alt="Playlist Image">
+                        
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist </h4>
+
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5 -->
+
+                    
+                    <div class="playlist_cards_left flex items-center">
+                        <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeobiMtxwq-ci358SdsuWemoideNSlVhc3Ng&s" alt="Playlist Image">
+                        
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist </h4>
+
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 6 -->
+
+                    
+                    <div class="playlist_cards_left flex items-center">
+                        <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS5zF5pDskuAwZtOHH5oz4OvZ01HEQYoWcA&s" alt="Playlist Image">
+                        
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist </h4>
+
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </secttion>
+        
+        <secttion class="mid_section" id="mid-section">
+
+        </secttion>
+        
+        <secttion class="right_section" id="right-section">
+
+        </secttion>
+
+
+        <!-- Bottom Section -->
+        <section class="bottom border ml-1 mr-1 backdrop-blur-md rounded-md" id="bottom">
+
+            <div class="main_progress_container flex items-center justify-between" id="progress_container">
+
+                <!-- Left -->
+                <div class="song my-3 flex items-center" id="song_detail_container">
+                    <img class="w-[50px] border rounded-md mx-2" src="https://filmfare.wwmindia.com/content/2021/jun/new-bollywood-songs-humraah-91623939760.jpg" alt="Playlist Image">
+                    <div>
+                        <h2 class="font-semibold">Humraah</h2>
+                        <h6 class="text-[10px]">Javed–Mohsin, Dev Negi and Neha Kakkar</h6>
+                    </div>    
+                </div>
+
+                <!-- Middle -->
+
+                <div class="progress_bar flex flex-col items-center justify-center">
+                    <div class="controls " id="control">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-backward-fast mx-3"></i>
+                            <i class="fa-solid text-2xl fa-circle-play"></i>
+                            <i class="fa-solid text-2xl fa-circle-pause hidden"></i>
+                            <i class="fa-solid fa-forward-fast mx-3"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <h6 class="text-[14px] mx-2">0:00</h6>
+                        <input type="range" class="w-[400px] h-1" min="0" max="100" value="50" id="progress_range">
+                        <h6 class="text-[14px] mx-2">0:00</h6>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                 <div class="volume" id="volume_container ">
+                    <div class="flex items-center justify-end mx-2">
+                        <i class="fa-solid fa-volume-low hidden mx-2"></i>
+                        <i class="fa-solid fa-volume-high mx-2"></i>
+                         <i class="fa-solid fa-volume-mute text-2xl hidden mx-2"></i>
+                         <input type="range" class="h-[5px]" min="0" max="100" value="50" id="volume_range">
+                    </div>    
+                 </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
