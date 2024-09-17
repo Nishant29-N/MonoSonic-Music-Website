@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cover: 'https://i.scdn.co/image/ab67616d0000b273f3735ea343894170c59668ce',
             src: './audio/Check-It-Out.mp3'
         },
-        // Add more songs as needed
+
         {
             title: 'Car Culture',
             artist: 'Laddi Chahal, Parmish Verma',
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cover: 'https://i.scdn.co/image/ab67616d0000b27302dde7bfff94df00c8b76eb4',
             src: './audio/Jab-Tak.mp3'
         },
+        // Add more songs as needed
     ];
 
     function loadSong(songIndex) {
@@ -174,3 +175,4 @@ function addToQueue(song) {
     
     queueContainer.appendChild(songElement);
 }
+
