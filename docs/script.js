@@ -176,3 +176,36 @@ function addToQueue(song) {
     queueContainer.appendChild(songElement);
 }
 
+// Handle spacebar for play/pause
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        event.preventDefault();  // Prevent spacebar scrolling
+        togglePlayPause();
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const playlists = document.querySelectorAll('.playlist_cards_left');
+    const midSection = document.getElementById('mid-section');
+
+    playlists.forEach((playlist) => {
+        playlist.addEventListener('click', (e) => {
+            e.preventDefault();  // Prevent the default page reload
+            
+            const playlistName = playlist.querySelector('h4').textContent;
+            loadPlaylist(playlistName);
+        });
+    });
+
+    function loadPlaylist(playlistName) {
+        // Assuming you have a function or API to get playlist details
+        // For now, I'll just replace the content in the middle section
+        midSection.innerHTML = `
+            <h2 class="text-2xl font-bold">${playlistName}</h2>
+            <div class="playlist_content">
+                <!-- Dynamically add playlist songs here -->
+            </div>`;
+    }
+});
+
