@@ -199,12 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function loadPlaylist(playlistName) {
-        // Assuming you have a function or API to get playlist details
-        // For now, I'll just replace the content in the middle section
+
         midSection.innerHTML = `
-            <h2 class="text-2xl font-bold">${playlistName}</h2>
+
             <div class="playlist_content">
                 <!-- Dynamically add playlist songs here -->
+
+                
             </div>`;
     }
 });
