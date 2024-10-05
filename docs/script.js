@@ -108,15 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
         audio.volume = volume / 100;
     }
 
-    function toggleFullscreen() {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
-        } else {
-            if (document.exitFullscreen) {
-                document.exitFullscreen();
-            }
-        }
-    }
+    // function toggleFullscreen() {
+    //     if (!document.fullscreenElement) {
+    //         document.documentElement.requestFullscreen();
+    //     } else {
+    //         if (document.exitFullscreen) {
+    //             document.exitFullscreen();
+    //         }
+    //     }
+    // } Need to be solved
 
     function updateProgress() {
         const { duration, currentTime } = audio;

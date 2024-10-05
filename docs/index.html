@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,15 +24,18 @@
                 width: 7px;
                 height: 8px;
             }
+
             ::-webkit-scrollbar-track {
                 box-shadow: inset 0 0 5px grey;
                 border-radius: 10px;
             }
+
             ::-webkit-scrollbar-thumb {
                 background: #fdfdfd;
                 border-radius: 10px;
             }
         }
+
         /* body {
             background: url(https://img.freepik.com/free-photo/beautiful-waterfall-landscape_23-2150526276.jpg?t=st=1724528609~exp=1724532209~hmac=c1b6b69741fe01bc294914ce0bd853c2d1b61a258b0e6da75b4879eab18d7c93&w=1380);
             background-size: cover;
@@ -53,43 +57,64 @@
             max-height: 620px;
             overflow-y: auto;
         }
+
         .playlists {
             overflow-x: auto;
         }
     </style>
 </head>
+
 <body class="p-0 m-0 box-border text-white font-[Montserrat]" id="main_background">
     <main class="w-[100%] flex" id="main_background">
-        <section class="left_section max-w-[287px] items-center justify-center gap-2 flex flex-col my-1 ml-2" id="left-section">
-            <nav class="flex flex-col border shadow-gray-900 shadow-md rounded-md w-[280px] justify-center backdrop-blur-md mt-2 gap-y-8">
-                <a href="./index.html" class="text-white text-[16px] px-2 mt-5 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i class="fa-solid fa-house mx-2"></i>Home</a>
-                <a href="#" class="text-white text-[16px] px-3 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i class="fa-solid fa-magnifying-glass mx-2"></i>Search</a>
-                <a href="#" class="text-white text-[16px] px-3 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i class="fa-solid fa-cart-shopping mx-2"></i>Marketplace</a>
-                <a href="#" class="text-white text-[16px] px-3 mb-5 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i class="fa-solid fa-microphone-lines mx-2"></i>Lyrics</a>
+        <section class="left_section max-w-[287px] items-center justify-center gap-2 flex flex-col my-1 ml-2"
+            id="left-section">
+            <nav
+                class="flex flex-col border shadow-gray-900 shadow-md rounded-md w-[280px] justify-center backdrop-blur-md mt-2 gap-y-8">
+                <a href="./index.html"
+                    class="text-white text-[16px] px-2 mt-5 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i
+                        class="fa-solid fa-house mx-2"></i>Home</a>
+                <a href="#"
+                    class="text-white text-[16px] px-3 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i
+                        class="fa-solid fa-magnifying-glass mx-2"></i>Search</a>
+                <a href="#"
+                    class="text-white text-[16px] px-3 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i
+                        class="fa-solid fa-cart-shopping mx-2"></i>Marketplace</a>
+                <a href="#"
+                    class="text-white text-[16px] px-3 mb-5 cursor-pointer hover:text-gray-900 hover:font-bold duration-300 ease-linear"><i
+                        class="fa-solid fa-microphone-lines mx-2"></i>Lyrics</a>
             </nav>
-            <div class="playlists_container shadow-gray-900 shadow-md flex flex-col border rounded-md mb-2 w-[280px] backdrop-blur-md mt-1" id="playlists-container">
+            <div class="playlists_container shadow-gray-900 shadow-md flex flex-col border rounded-md mb-2 w-[280px] backdrop-blur-md mt-1"
+                id="playlists-container">
                 <div class="your_library py-1 items-center my-2 flex justify-between">
                     <div class="flex items-center">
                         <i class="fa-solid mx-2 fa-book font-bold"></i>
                         <h1 class="font-bold">Your Library</h1>
                     </div>
                     <div>
-                        <i class="fa-solid fa-plus mx-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
-                        <i class="fa-solid fa-arrow-right mx-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
+                        <i
+                            class="fa-solid fa-plus mx-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
+                        <i
+                            class="fa-solid fa-arrow-right mx-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
                     </div>
                 </div>
                 <div class="playlists_artists py-1 items-center my-1 mx-2 flex justify-start">
-                    <button class="px-2 py-1 rounded-lg bg-slate-600/[.7] hover:bg-slate-400 transition-all duration-[0.5s] ease-in-out drop-shadow-md">Playlists</button>
-                    <button class="px-2 py-1 mx-3 rounded-lg bg-slate-600/[.7] hover:bg-slate-400 transition-all duration-[0.5s] ease-in-out drop-shadow-md">Artists</button>
+                    <button
+                        class="px-2 py-1 rounded-lg bg-slate-600/[.7] hover:bg-slate-400 transition-all duration-[0.5s] ease-in-out drop-shadow-md">Playlists</button>
+                    <button
+                        class="px-2 py-1 mx-3 rounded-lg bg-slate-600/[.7] hover:bg-slate-400 transition-all duration-[0.5s] ease-in-out drop-shadow-md">Artists</button>
                 </div>
                 <div class="search_recents py-1 items-center my-1 mx-2 flex justify-between">
-                    <i class="fa-solid fa-magnifying-glass ml-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
+                    <i
+                        class="fa-solid fa-magnifying-glass ml-2 hover:text-green-600 hover:font-bold duration-300 ease-linear"></i>
                     <h4 class="mr-2">Recents <i class="fa-solid fa-list"></i></h4>
                 </div>
                 <div class="playlists_left py-3 flex flex-col gap-3 overflow-y-scroll max-h-[236px] scroll-smooth">
                     <a href="./liked playlist/likedplaylist.html">
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://preview.redd.it/rnqa7yhv4il71.jpg?width=640&crop=smart&auto=webp&s=819eb2bda1b35c7729065035a16e81824132e2f1" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                            <img class="w-[50px] rounded-md mx-2"
+                                src="https://preview.redd.it/rnqa7yhv4il71.jpg?width=640&crop=smart&auto=webp&s=819eb2bda1b35c7729065035a16e81824132e2f1"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Liked Playlist</h4>
                                 <div class="flex items-center">
@@ -101,87 +126,109 @@
                             </div>
                         </div>
                     </a>
-                  
-                  
-                    
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="Playlist Image">
-                            <div>
-                                <h4 class="font-bold">Nishant's Liked Playlist</h4>
-                                <div class="flex items-center">
-                                    <h4 class="text-[14px]">Playlist</h4>
-                                    <i class="fa-solid text-[5px] fa-circle mx-1"></i>
-                                    <h4 class="text-[14px]">NISHANT</h4>
-                                </div>
+
+
+
+                    <div
+                        class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                        <img class="w-[50px] rounded-md mx-2"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                            alt="Playlist Image">
+                        <div>
+                            <h4 class="font-bold">Nishant's Liked Playlist</h4>
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
                             </div>
                         </div>
-                   
-                    
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://cdns-images.dzcdn.net/images/cover/d4544e5e7dd34fbea58a49896d4e68ea/1900x1900-000000-80-0-0.jpg" alt="Playlist Image">
-                            <div>
-                                <h4 class="font-bold">Party Mix</h4>
-                                <div class="flex items-center">
-                                    <h4 class="text-[14px]">Playlist</h4>
-                                    <i class="fa-solid text-[5px] fa-circle mx-1"></i>
-                                    <h4 class="text-[14px]">NISHANT</h4>
-                                </div>
+                    </div>
+
+
+                    <div
+                        class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                        <img class="w-[50px] rounded-md mx-2"
+                            src="https://cdns-images.dzcdn.net/images/cover/d4544e5e7dd34fbea58a49896d4e68ea/1900x1900-000000-80-0-0.jpg"
+                            alt="Playlist Image">
+                        <div>
+                            <h4 class="font-bold">Party Mix</h4>
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
                             </div>
                         </div>
-                
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://i.scdn.co/image/ab67616d0000b273837703447a37700546b74b6c" alt="Playlist Image">
-                            <div>
-                                <h4 class="font-bold">Punjabi Hits</h4>
-                                <div class="flex items-center">
-                                    <h4 class="text-[14px]">Playlist</h4>
-                                    <i class="fa-solid text-[5px] fa-circle mx-1"></i>
-                                    <h4 class="text-[14px]">NISHANT</h4>
-                                </div>
+                    </div>
+
+                    <div
+                        class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                        <img class="w-[50px] rounded-md mx-2"
+                            src="https://i.scdn.co/image/ab67616d0000b273837703447a37700546b74b6c" alt="Playlist Image">
+                        <div>
+                            <h4 class="font-bold">Punjabi Hits</h4>
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
                             </div>
                         </div>
-                
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeobiMtxwq-ci358SdsuWemoideNSlVhc3Ng&s" alt="Playlist Image">
-                            <div>
-                                <h4 class="font-bold">Love Songs</h4>
-                                <div class="flex items-center">
-                                    <h4 class="text-[14px]">Playlist</h4>
-                                    <i class="fa-solid text-[5px] fa-circle mx-1"></i>
-                                    <h4 class="text-[14px]">NISHANT</h4>
-                                </div>
+                    </div>
+
+                    <div
+                        class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                        <img class="w-[50px] rounded-md mx-2"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeobiMtxwq-ci358SdsuWemoideNSlVhc3Ng&s"
+                            alt="Playlist Image">
+                        <div>
+                            <h4 class="font-bold">Love Songs</h4>
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
                             </div>
                         </div>
-                  
-                        <div class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
-                            <img class="w-[50px] rounded-md mx-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS5zF5pDskuAwZtOHH5oz4OvZ01HEQYoWcA&s" alt="Playlist Image">
-                            <div>
-                                <h4 class="font-bold">Bollywood Mix</h4>
-                                <div class="flex items-center">
-                                    <h4 class="text-[14px]">Playlist</h4>
-                                    <i class="fa-solid text-[5px] fa-circle mx-1"></i>
-                                    <h4 class="text-[14px]">NISHANT</h4>
-                                </div>
+                    </div>
+
+                    <div
+                        class="playlist_cards_left cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] py-2 mx-2 rounded-md flex items-center">
+                        <img class="w-[50px] rounded-md mx-2"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS5zF5pDskuAwZtOHH5oz4OvZ01HEQYoWcA&s"
+                            alt="Playlist Image">
+                        <div>
+                            <h4 class="font-bold">Bollywood Mix</h4>
+                            <div class="flex items-center">
+                                <h4 class="text-[14px]">Playlist</h4>
+                                <i class="fa-solid text-[5px] fa-circle mx-1"></i>
+                                <h4 class="text-[14px]">NISHANT</h4>
                             </div>
                         </div>
-                  
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!-- Middle Section Main -->
 
-        <section class="mid_section flex flex-col shadow-gray-900 backdrop-blur-md shadow-md w-[900px] border mx-2 my-3 rounded-md" id="mid-section">
+        <section
+            class="mid_section flex flex-col shadow-gray-900 backdrop-blur-md shadow-md w-[900px] border mx-2 my-3 rounded-md"
+            id="mid-section">
             <div class="flex justify-between mx-3 shadow-black shadow-sm rounded-lg">
                 <div class="flex items-center">
-                    <i class="fa-solid fa-arrow-left cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
-                    <i class="fa-solid fa-arrow-right cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
-                    <i class="fa-solid fa-desktop cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-3 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-arrow-left cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-arrow-right cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-desktop cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-3 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
                 </div>
                 <div class="flex items-center">
-                    <i class="fa-solid fa-bell cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
-                    <i class="fa-solid fa-user-group cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
-                    <i class="fa-solid fa-user cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-bell cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-user-group cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
+                    <i
+                        class="fa-solid fa-user cursor-pointer hover:bg-slate-400/[.7] transition-all duration-[0.5s] m-2 p-2 rounded-md bg-slate-600/[.7] text-[16px]"></i>
                 </div>
             </div>
             <div class="overflow-y-scroll">
@@ -190,61 +237,88 @@
             <div class="overflow-y-scroll">
                 <div class="flex-col my-8 mx-2 overflow-x-hidden scroll-smooth">
                     <div class="flex gap-x-4 my-2 justify-between">
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            
-                            <img class="w-[50px] rounded-md mr-3" src="https://preview.redd.it/rnqa7yhv4il71.jpg?width=640&crop=smart&auto=webp&s=819eb2bda1b35c7729065035a16e81824132e2f1" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://preview.redd.it/rnqa7yhv4il71.jpg?width=640&crop=smart&auto=webp&s=819eb2bda1b35c7729065035a16e81824132e2f1"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Liked Playlist</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            <img class="w-[50px] rounded-md mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Party Mix</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
-                            <img class="w-[50px] rounded-md mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeobiMtxwq-ci358SdsuWemoideNSlVhc3Ng&s" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeobiMtxwq-ci358SdsuWemoideNSlVhc3Ng&s"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Punjabi Hits</h4>
                             </div>
                         </div>
                     </div>
                     <div class="flex gap-x-4 my-2 justify-between">
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            <img class="w-[50px] rounded-md mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS5zF5pDskuAwZtOHH5oz4OvZ01HEQYoWcA&s" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS5zF5pDskuAwZtOHH5oz4OvZ01HEQYoWcA&s"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Haryanvi Hits</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            <img class="w-[50px] rounded-md mr-3" src="https://i.scdn.co/image/ab67616d0000b273837703447a37700546b74b6c" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://i.scdn.co/image/ab67616d0000b273837703447a37700546b74b6c"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Romantic Songs</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
-                            <img class="w-[50px] rounded-md mr-3" src="https://cdns-images.dzcdn.net/images/cover/d4544e5e7dd34fbea58a49896d4e68ea/1900x1900-000000-80-0-0.jpg" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://cdns-images.dzcdn.net/images/cover/d4544e5e7dd34fbea58a49896d4e68ea/1900x1900-000000-80-0-0.jpg"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Spiritual</h4>
                             </div>
                         </div>
                     </div>
                     <div class="flex gap-x-4 my-2 justify-between">
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            <img class="w-[50px] rounded-md mr-3" src="https://c.saavncdn.com/editorial/BollywoodCovers_20230728124106.jpg" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://c.saavncdn.com/editorial/BollywoodCovers_20230728124106.jpg"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Bollywood</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
-                            <img class="w-[50px] rounded-md mr-3" src="https://i.scdn.co/image/ab67616d0000b27381acf64eb2c8b693401bd147" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://i.scdn.co/image/ab67616d0000b27381acf64eb2c8b693401bd147"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Love Songs</h4>
                             </div>
                         </div>
-                        <div class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
-                            <img class="w-[50px] rounded-md mr-3" src="https://yt3.googleusercontent.com/wjzDobMJOe1SRZk64cU-UnMzGFiNw2g46e5aoZjNsFYD5T_V48HmAaSh7Tl9jwh3aDMq8qiCkQ=s900-c-k-c0x00ffffff-no-rj" alt="Playlist Image">
+                        <div
+                            class="playlist_cards_mid w-full cursor-pointer transition-all duration-[0.5s] ease-in-out hover:bg-slate-300/[.4] border-[0.5px] shadow-md shadow-gray-800 rounded-md flex items-center p-2 mr-3">
+                            <img class="w-[50px] rounded-md mr-3"
+                                src="https://yt3.googleusercontent.com/wjzDobMJOe1SRZk64cU-UnMzGFiNw2g46e5aoZjNsFYD5T_V48HmAaSh7Tl9jwh3aDMq8qiCkQ=s900-c-k-c0x00ffffff-no-rj"
+                                alt="Playlist Image">
                             <div>
                                 <h4 class="font-bold">Hindi Songs</h4>
                             </div>
@@ -258,9 +332,12 @@
                     </div>
                     <div class="playlists overflow-hidden flex gap-x-9">
                         <a href="./playlist.html">
-                            <div class="playlist_info my-3 cursor-pointer hover:shadow-lg shadow-black hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                            <div
+                                class="playlist_info my-3 cursor-pointer hover:shadow-lg shadow-black hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                                 <div>
-                                    <img class="w-[150px] shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                    <img class="w-[150px] shadow-md shadow-black rounded-md"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                        alt="">
                                 </div>
                                 <div>
                                     <h2 class="text-[18px] font-semibold mt-2">Daily Mix 1</h2>
@@ -269,9 +346,12 @@
                             </div>
                         </a>
                         <a href="./playlist.html">
-                            <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                            <div
+                                class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                                 <div>
-                                    <img class="w-[150px] shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                    <img class="w-[150px] shadow-md shadow-black rounded-md"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                        alt="">
                                 </div>
                                 <div>
                                     <h2 class="text-[18px] font-semibold mt-2">Daily Mix 2</h2>
@@ -280,9 +360,12 @@
                             </div>
                         </a>
                         <a href="./playlist.html">
-                            <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                            <div
+                                class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                                 <div>
-                                    <img class="w-[150px] shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                    <img class="w-[150px] shadow-md shadow-black rounded-md"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                        alt="">
                                 </div>
                                 <div>
                                     <h2 class="text-[18px] font-semibold mt-2">Daily Mix 3</h2>
@@ -291,9 +374,12 @@
                             </div>
                         </a>
                         <a href="./playlist.html">
-                            <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                            <div
+                                class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                                 <div>
-                                    <img class="w-[150px] shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                    <img class="w-[150px] shadow-md shadow-black rounded-md"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                        alt="">
                                 </div>
                                 <div>
                                     <h2 class="text-[18px] font-semibold mt-2">Daily Mix 4</h2>
@@ -301,9 +387,12 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[150px] shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[150px] shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2">Daily Mix 5</h2>
@@ -318,45 +407,60 @@
                         <a href="#" class="mr-6 hover:underline">Show All</a>
                     </div>
                     <div class="playlists overflow-hidden flex gap-x-9">
-                        <div class="playlist_info my-3 cursor-pointer hover:shadow-lg shadow-black hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 cursor-pointer hover:shadow-lg shadow-black hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2 truncate">Karan Aujla Mix</h2>
                                 <p class="text-[12px] truncate">Jerry, Garry Sandhu, Pritam</p>
                             </div>
                         </div>
-                        <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[150px] h-[120px] object-cover shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[150px] h-[120px] object-cover shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2 truncate">Romantic Mix</h2>
                                 <p class="text-[12px] truncate">Sharn, Atif Aslam, KK</p>
                             </div>
                         </div>
-                        <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2 truncate">Indie Mix</h2>
                                 <p class="text-[12px] truncate">Djo, The Neighbourhood, .....</p>
                             </div>
                         </div>
-                        <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[150px] h-[120px] object-cover shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[150px] h-[120px] object-cover shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2 truncate">Love Songs</h2>
                                 <p class="text-[12px] truncate">By I don't know</p>
                             </div>
                         </div>
-                        <div class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
+                        <div
+                            class="playlist_info my-3 hover:shadow-lg shadow-black cursor-pointer hover:bg-gray-300/[0.4] rounded-md overflow-y-hidden p-3 duration-[0.5s]">
                             <div>
-                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s" alt="">
+                                <img class="w-[120px] h-[120px] object-cover shadow-md shadow-black rounded-md"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBByiSiMh7Fxi331Lk7MHOj35UWIjExXxZpw&s"
+                                    alt="">
                             </div>
                             <div>
                                 <h2 class="text-[18px] font-semibold mt-2 truncate">Daily Mix 5</h2>
@@ -368,7 +472,8 @@
             </div>
         </section>
 
-        <aside class="right_section max-w-[330px] border my-3 rounded-md shadow-gray-900 shadow-md backdrop-blur-md" id="right-section">
+        <aside class="right_section max-w-[330px] border my-3 rounded-md shadow-gray-900 shadow-md backdrop-blur-md"
+            id="right-section">
             <div class="flex mx-3 w-[300px] my-3 items-center justify-between">
                 <div class="flex justify-between">
                     <h3 class="mr-3 border-green-500 border-b-4 rounded-lg py-1">Queue</h3>
@@ -387,24 +492,31 @@
     <footer class="bottom border shadow-gray-900 shadow-md ml-1 mr-1 backdrop-blur-md rounded-md" id="bottom">
         <div class="main_progress_container h-24 flex items-center justify-between" id="progress_container">
             <div class="song my-3 flex items-center" id="song_detail_container">
-                <img class="w-[80px] border rounded-md mx-2" src="https://filmfare.wwmindia.com/content/2021/jun/new-bollywood-songs-humraah-91623939760.jpg" alt="Playlist Image">
+                <img class="w-[80px] border rounded-md mx-2"
+                    src="https://filmfare.wwmindia.com/content/2021/jun/new-bollywood-songs-humraah-91623939760.jpg"
+                    alt="Playlist Image">
                 <div class="flex flex-col gap-y-1">
                     <h2 class="font-semibold text-xl">Humraah</h2>
                     <h6 class="text-[12px]">Javed Mohsin, Dev Negi and Neha Kakkar</h6>
-                </div>    
+                </div>
             </div>
             <div class="progress_bar flex flex-col gap-y-3 items-center justify-center">
                 <div class="controls" id="control">
                     <div class="flex justify-between items-center">
-                        <i class="fa-solid fa-backward-fast text-xl mx-3 cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
-                        <i class="fa-solid text-3xl fa-circle-play cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
-                        <i class="fa-solid text-3xl fa-circle-pause hidden cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
-                        <i class="fa-solid fa-forward-fast text-xl mx-3 cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
+                        <i
+                            class="fa-solid fa-backward-fast text-xl mx-3 cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
+                        <i
+                            class="fa-solid text-3xl fa-circle-play cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
+                        <i
+                            class="fa-solid text-3xl fa-circle-pause hidden cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
+                        <i
+                            class="fa-solid fa-forward-fast text-xl mx-3 cursor-pointer hover:text-green-500 transition-all duration-[0.5s] ease-in-out hover:scale-110"></i>
                     </div>
                 </div>
                 <div class="flex items-center">
                     <h6 class="text-[14px] mx-2" id="current-time">0:00</h6>
-                    <input type="range" class="w-[400px] accent-green-400 h-2" min="0" max="100" value="0" id="song_range">
+                    <input type="range" class="w-[400px] accent-green-400 h-2" min="0" max="100" value="0"
+                        id="song_range">
                     <h6 class="text-[14px] mx-2" id="total-duration">0:00</h6>
                 </div>
             </div>
@@ -413,7 +525,8 @@
                     <i class="fa-solid fa-volume-low hidden mx-2"></i>
                     <i class="fa-solid fa-volume-high mx-2"></i>
                     <i class="fa-solid fa-volume-mute text-2xl hidden mx-2"></i>
-                    <input type="range" class="w-[100px] accent-green-400 rounded-lg h-2" min="0" max="100" value="40" id="volume_range">
+                    <input type="range" class="w-[100px] accent-green-400 rounded-lg h-2" min="0" max="100" value="40"
+                        id="volume_range">
                     <i class="fa-solid fa-up-right-and-down-left-from-center mx-5 cursor-pointer"></i>
                 </div>
             </div>
@@ -424,4 +537,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
