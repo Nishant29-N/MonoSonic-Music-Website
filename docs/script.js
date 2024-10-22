@@ -36,33 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
       cover: "https://i.scdn.co/image/ab67616d0000b273f3735ea343894170c59668ce",
       src: "./audio/Check-It-Out.mp3",
     },
-
     {
       title: "Car Culture",
       artist: "Laddi Chahal, Parmish Verma",
       cover: "https://i.scdn.co/image/ab67616d0000b2732f1335676c1bbf7962ca3ece",
       src: "./audio/Car-Culture.mp3",
     },
-    {
-      title: "Gallan Gallan",
-      artist: "Kabir | Sharrb",
-      cover:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbFIEN9pup4lebZcJiWyphWYi1_UXetsXXQ&s",
-      src: "./audio/Gallan-Gallan.mp3",
-    },
-    {
-      title: "Old Money",
-      artist: "Laddi Chahal, Parmish Verma",
-      cover: "https://i.scdn.co/image/ab67616d0000b2734b482d2eec0b3f697439d0b3",
-      src: "./audio/Old-Money.mp3",
-    },
-    {
-      title: "Jab Tak",
-      artist: "Arijit Singh",
-      cover: "https://i.scdn.co/image/ab67616d0000b27302dde7bfff94df00c8b76eb4",
-      src: "./audio/Jab-Tak.mp3",
-    },
-    // Add more songs as needed
+    // Add more songs here as needed
   ];
 
   function loadSong(songIndex) {
@@ -76,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mainBackground.style.backgroundImage = `url(${song.cover})`;
     mainBackground.style.backgroundSize = "cover";
     mainBackground.style.backgroundPosition = "center";
+    mainBackground.style.backgroundRepeat = "no-repeat";
   }
 
   function playSong() {
@@ -112,16 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
     audio.volume = volume / 100;
   }
 
-  // function toggleFullscreen() {
-  //     if (!document.fullscreenElement) {
-  //         document.documentElement.requestFullscreen();
-  //     } else {
-  //         if (document.exitFullscreen) {
-  //             document.exitFullscreen();
-  //         }
-  //     }
-  // } Need to be solved
-
   function updateProgress() {
     const { duration, currentTime } = audio;
     songRange.max = duration;
@@ -136,94 +107,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   }
 
-  playlists.forEach((playlist, index) => {
-    playlist.addEventListener("click", () => {
-      midSection.innerHTML = `<h2>${
-        playlist.querySelector("h4").textContent
-      }</h2>`;
-      // Load playlist songs and display in the middle section
-    });
-  });
-
-  backButton.addEventListener("click", () => {
-    window.history.back();
-  });
+  // Initialize the first song and set background on page load
+  loadSong(0);
 
   playButton.addEventListener("click", playSong);
   pauseButton.addEventListener("click", pauseSong);
   nextButton.addEventListener("click", nextSong);
   prevButton.addEventListener("click", prevSong);
   volumeRange.addEventListener("input", (e) => setVolume(e.target.value));
-  fullscreenButton.addEventListener("click", toggleFullscreen);
 
   audio.addEventListener("timeupdate", updateProgress);
   songRange.addEventListener("input", (e) => {
     audio.currentTime = e.target.value;
   });
-
-  // Initialize first song
-  loadSong(currentSongIndex);
-});
-
-function addToQueue(song) {
-  const songElement = document.createElement("div");
-  songElement.classList.add(
-    "playlist_cards_mid",
-    "w-full",
-    "cursor-pointer",
-    "transition-all",
-    "duration-[0.5s]",
-    "ease-in-out",
-    "hover:bg-slate-300/[.4]",
-    "border-[0.5px]",
-    "shadow-md",
-    "shadow-gray-800",
-    "rounded-md",
-    "flex",
-    "items-center",
-    "p-2",
-    "mr-3"
-  );
-
-  songElement.innerHTML = `
-        <img class="w-[50px] rounded-md mr-3" src="${song.cover}" alt="Song Image">
-        <div>
-            <h4 class="font-bold">${song.title}</h4>
-            <p class="text-[12px]">${song.artist}</p>
-        </div>
-    `;
-
-  queueContainer.appendChild(songElement);
-}
-
-// Handle spacebar for play/pause
-document.addEventListener("keydown", (event) => {
-  if (event.code === "Space") {
-    event.preventDefault(); // Prevent spacebar scrolling
-    togglePlayPause();
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const playlists = document.querySelectorAll(".playlist_cards_left");
-  const midSection = document.getElementById("mid-section");
-
-  playlists.forEach((playlist) => {
-    playlist.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent the default page reload
-
-      const playlistName = playlist.querySelector("h4").textContent;
-      loadPlaylist(playlistName);
-    });
-  });
-
-  function loadPlaylist(playlistName) {
-    midSection.innerHTML = `
-
-            <div class="playlist_content">
-                <!-- Dynamically add playlist songs here -->
-
-                
-            </div>`;
-  }
 });

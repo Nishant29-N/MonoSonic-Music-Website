@@ -42,8 +42,16 @@
         } */
 
         #main_background {
+            background-color: #000;
+            /* Fallback color */
+            background-image: none;
+            /* Fallback in case no image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             transition: opacity 1s ease-in-out;
         }
+
 
         .fade-out {
             opacity: 0;
@@ -65,7 +73,7 @@
 </head>
 
 <body class="p-0 m-0 box-border text-white font-[Montserrat]" id="main_background">
-    <main class="w-[100%] flex" id="main_background">
+    <main class="w-[100%] flex">
         <section class="left_section max-w-[287px] items-center justify-center gap-2 flex flex-col my-1 ml-2"
             id="left-section">
             <nav
